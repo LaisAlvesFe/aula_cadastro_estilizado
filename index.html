@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1 class="logo">
-            <img src="logo.jpg" alt="Logo do Meu Sistema">
+            <img src="logo.jpg" alt="Registration Project">
             Registration Project
         </h1>
     </header>
@@ -21,7 +21,7 @@
             <form id="formCadastro" method="POST">
                 <p>
                     <label for="nome">Nome completo: </label>
-                    <input type="text" id="nome" name="nome" required />
+                    <input type="text" id="nome" name="nome" required minlength="3"/>
                 </p>
 
                 <p>
@@ -32,7 +32,7 @@
                 <p>
                     <label for="senha">Informe sua senha: </label>
                     <input type="password" id="senha" name="senha" required minlength="8" maxlength="12" 
-                        pattern="(?=.*\d).{8,}" title="Mínimo de 8 caracteres, e máximo 12, com pelo menos um número.">
+                        pattern="(?=.*\d).{8,12}" title="Mínimo de 8 caracteres, e máximo 12, com pelo menos um número.">
                 </p>
 
                 <p>
